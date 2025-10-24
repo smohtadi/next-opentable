@@ -1,0 +1,62 @@
+.header {
+  align-items: center;
+  background-color: var(--color-app-header);
+  border-block-end: 1px solid var(--color-app-header-border);
+  color: var(--color-app-header-foreground);
+  display: flex;
+  height: var(--height-app-header);
+  left: 0;
+  padding-inline-start: 2rem;
+  padding-inline-end: 1rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+.branding {
+  display: flex;
+  align-items: center;
+  padding-inline-end: 0.5rem;
+  border-inline-end: 1px solid var(--color-app-header-border);
+  gap: 0.5rem;
+}
+
+.brand {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.logo {
+  position: relative;
+  height: 36px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  width: 36px;
+}
+
+.logo::before {
+  position: absolute;
+  left: calc(50% - 5px);
+  top: calc(50% - 5px);
+  border-radius: 50%;
+  content: "";
+  height: 10px;
+  width: 10px;
+  background-color: var(--color-app-header);
+}
+
+.utility {
+  flex: 1;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  padding-inline-end: 1rem;
+  border-inline-end: 1px solid var(--color-app-header-border);
+}
+
+.search {
+  padding: 1rem;
+}

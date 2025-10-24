@@ -1,0 +1,13 @@
+{
+  "Site": {
+    "title": "OpenTable"
+  },
+  "IndexPage": {
+    "description": "Index description",
+    "title": "Index",
+    "metadata": {
+      "title": "Discover and Reserve the best restaurants",
+      "description": "Restaurant reservations are available here 24/7: Find and reserve a table from the best restaurants on OpenTable CA - the table reservation site trusted by 1000s of Canadian diners to book the perfect table. "
+    }
+  }
+}

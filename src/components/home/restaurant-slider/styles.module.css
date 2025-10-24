@@ -1,0 +1,48 @@
+.slider {
+  position: relative;
+}
+
+.inner {
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: none;
+  gap: 1rem;
+  scroll-behavior: smooth;
+}
+
+.header {
+  margin-block-end: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header a {
+  color: var(--color-primary);
+}
+
+.title {
+  font-size: 1.5rem;
+}
+
+.scrollControl {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.scrollControlPrev {
+  left: -1rem;
+}
+
+.scrollControlNext {
+  right: -1rem;
+}

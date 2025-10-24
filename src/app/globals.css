@@ -1,0 +1,186 @@
+:root {
+  --color-background: hsl(0, 0%, 100%);
+  --color-foreground: hsl(0, 0%, 4%);
+  --color-hover: hsl(0, 0%, 96%);
+
+  --color-card: hsl(0, 0%, 100%);
+  --color-card-foreground: hsl(0, 0%, 4%);
+  --color-card-hover: hsl(0, 0%, 96%);
+  --color-card-border: hsl(0, 0%, 92%);
+
+  --color-popover: hsl(0, 0%, 100%);
+  --color-popover-foreground: hsl(0, 0%, 4%);
+  --color-popover-hover: hsl(0, 0%, 96%);
+
+  --color-primary: hsl(356, 69%, 54%);
+  --color-primary-foreground: hsl(0, 0%, 100%);
+  --color-primary-hover: hsl(329, 83%, 37%);
+
+  --color-secondary: hsl(0, 0%, 96%);
+  --color-secondary-foreground: hsl(0, 0%, 9%);
+  --color-secondary-hover: hsl(0, 0%, 88%);
+
+  --color-accent: hsl(195, 63%, 38%);
+  --color-accent-foreground: hsl(0, 0%, 100%);
+  --color-accent-hover: hsl(195, 69%, 29%);
+
+  --color-danger: hsl(357, 100%, 45%);
+  --color-danger-foreground: hsl(0, 0%, 100%);
+  --color-danger-hover: hsl(357, 94%, 37%);
+
+  --color-border: hsl(0, 0%, 92%);
+
+  --color-input-border: hsl(0, 0%, 92%);
+  --color-input: hsl(0, 0%, 100%);
+  --color-input-foreground: hsl(0, 0%, 4%);
+  --color-ring: hsl(221, 97%, 53%);
+
+  --color-sidebar: hsl(0, 0%, 98%);
+  --color-sidebar-foreground: hsl(0, 0%, 4%);
+  --color-sidebar-active: hsl(0, 0%, 96%);
+  --color-sidebar-active-foreground: hsl(0, 0%, 9%);
+  --color-sidebar-border: hsl(0, 0%, 90%);
+  --color-sidebar-hover: hsl(0, 0%, 96%);
+
+  --color-app-header: hsl(0, 0%, 100%);
+  --color-app-header-foreground: hsl(0, 0%, 4%);
+  --color-app-header-border: hsl(0, 0%, 90%);
+
+  --color-badge-danger: hsl(5, 86%, 97%);
+  --color-badge-danger-foreground: hsl(4, 74%, 49%);
+  --color-badge-success: hsl(141, 84%, 93%);
+  --color-badge-success-foreground: hsl(144, 100%, 25%);
+
+  --fs-base: 0.875rem;
+  --fs-sm: 0.75rem;
+  --fs-h1: 2rem;
+  --fs-h2: 1.5rem;
+  --fs-h3: 1.125rem;
+  --fs-h4: 1rem;
+
+  --height-app-header: 4rem;
+  --radius: 0.2rem;
+
+  --shadow: 0 1px 3px 0 hsla(0, 0%, 0%, 0.1), 0 1px 2px -1px hsla(0, 0%, 0%, 0.1);
+
+  --tracking-tight: -0.025em;
+
+  --width-sidebar: 16rem;
+  --width-sidebar-mini: 5rem;
+
+  --width-container: 80rem;
+}
+
+.dark {
+  --color-background: hsl(0, 0%, 4%);
+  --color-foreground: hsl(0, 0%, 98%);
+  --color-hover: hsl(0, 0%, 10%);
+
+  --color-card: hsl(0, 0%, 9%);
+  --color-card-foreground: hsl(0, 0%, 98%);
+  --color-card-hover: hsl(0, 0%, 20%);
+
+  --color-popover: hsl(0, 0%, 9%);
+  --color-popover-foreground: hsl(0, 0%, 98%);
+  --color-popover-hover: hsl(0, 0%, 20%);
+
+  --color-primary: hsl(329, 100%, 45%);
+  --color-primary-foreground: hsl(0, 0%, 100%);
+  --color-primary-hover: hsl(329, 90%, 40%);
+
+  --color-secondary: hsl(0, 0%, 15%);
+  --color-secondary-foreground: hsl(0, 0%, 98%);
+  --color-secondary-hover: hsl(0, 0%, 23%);
+
+  --color-accent: hsl(212, 100%, 66%);
+  --color-accent-foreground: hsl(0, 0%, 100%);
+  --color-accent-hover: hsl(221, 100%, 60%);
+
+  --color-danger: hsl(359, 100%, 70%);
+  --color-danger-foreground: hsl(0, 0%, 100%);
+  --color-danger-hover: hsl(359, 100%, 60%);
+
+  --color-border: hsla(0, 0%, 100%, 0.1);
+
+  --color-input-border: hsla(0, 0%, 100%, 0.15);
+  --color-input: hsla(0, 0%, 100%, 0.15);
+  --color-input-foreground: hsl(0, 0%, 98%);
+  --color-ring: hsl(212, 100%, 66%);
+
+  --color-sidebar: hsl(0, 0%, 9%);
+  --color-sidebar-foreground: hsl(0, 0%, 98%);
+  --color-sidebar-active: hsl(0, 0%, 15%);
+  --color-sidebar-active-foreground: hsl(0, 0%, 98%);
+  --color-sidebar-border: hsla(0, 0%, 100%, 0.1);
+  --color-sidebar-hover: hsl(0, 0%, 20%);
+
+  --color-app-header: hsl(0, 0%, 9%);
+  --color-app-header-foreground: hsl(0, 0%, 98%);
+  --color-app-header-border: hsla(0, 0%, 100%, 0.1);
+
+  --color-badge-danger: hsla(4, 86%, 58%, 0.15);
+  --color-badge-danger-foreground: hsl(4, 86%, 58%);
+  --color-badge-success: hsla(144, 100%, 39%, 0.15);
+  --color-badge-success-foreground: hsl(144, 100%, 39%);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: var(--color-foreground);
+  background: var(--color-background);
+  font-size: var(--fs-base);
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.container {
+  max-width: var(--width-container);
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+.grid-col {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .grid-col-md-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}

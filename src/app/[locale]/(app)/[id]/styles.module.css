@@ -1,0 +1,103 @@
+.imageCover {
+  width: 100%;
+  height: 384px;
+  object-fit: cover;
+}
+
+.row {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-block-start: 2rem;
+}
+
+.header {
+  padding-block-end: 2rem;
+}
+
+.title {
+  font-size: var(--fs-h1);
+  font-weight: 700;
+  margin-block-end: 2rem;
+}
+
+.starIcon {
+  fill: var(--color-primary);
+}
+
+.detail {
+  font-weight: 500;
+}
+
+.detail:not(:first-child) {
+  margin-inline-start: 0.25rem;
+}
+
+.detail:not(:first-child):before {
+  content: "\2022";
+  margin-inline-end: 0.25rem;
+}
+
+.toc {
+  display: flex;
+  gap: 1.5rem;
+  border-block-end: 1px solid var(--color-border);
+  padding-block-end: 1rem;
+  color: var(--color-primary);
+}
+
+.toc a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.section {
+  margin-block-start: 2rem;
+}
+
+.sectionTitle {
+  font-size: var(--fs-h2);
+  font-weight: 700;
+  margin-block-end: 1rem;
+}
+
+.experienceCard {
+  padding: 1rem;
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius);
+}
+
+.experienceTitle {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-block-end: 0.5rem;
+}
+
+.experienceDescription {
+  margin-block-end: 1rem;
+}
+
+.reservationCard {
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+}
+
+.reservationTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-block-end: 1rem;
+}
+
+.reservationDescription {
+  margin-block-end: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .col1 {
+    flex: 7;
+  }
+  .col2 {
+    flex: 5;
+  }
+}

@@ -1,0 +1,25 @@
+.main {
+  margin-block-start: calc(var(--height-app-header) + 2rem);
+}
+
+.container {
+  max-width: var(--width-container);
+  margin-inline: auto;
+}
+
+.locationInquiry {
+  margin-block: 1rem;
+  margin-inline: auto;
+  width: fit-content;
+}
+
+.locationIcon {
+  fill: var(--color-primary);
+  margin-inline-end: 0.5rem;
+}
+
+.highlightBanner {
+  margin-block: 2rem;
+  padding-block: 1.5rem;
+  background-color: rgb(243, 240, 232);
+}
