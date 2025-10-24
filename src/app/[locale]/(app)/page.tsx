@@ -1,3 +1,4 @@
+import { StaticImageData } from "next/image";
 import Button from "@/components/ui/button/button";
 import RestaurantCard from "@/components/restaurant-card/restaurant-card";
 import { Link } from "@/i18n/navigation";
@@ -6,6 +7,10 @@ import Searchbar from "@/components/searchbar/searchbar";
 import { Navigation } from "lucide-react";
 import clsx from "clsx";
 import styles from "@/app/[locale]/(app)/page.module.css";
+import food1 from "#/public/images/food-1.jpg";
+import food2 from "#/public/images/food-2.jpg";
+import food3 from "#/public/images/food-3.jpg";
+import food4 from "#/public/images/food-4.jpg";
 
 type IRestaurant = {
   id: string;
@@ -18,6 +23,7 @@ type IRestaurant = {
   bookingTrend: number;
   bookingTimes: string[];
   href: string;
+  image: StaticImageData | string;
 };
 
 const restaurants: IRestaurant[] = [
@@ -32,6 +38,7 @@ const restaurants: IRestaurant[] = [
     bookingTrend: 32,
     bookingTimes: ["6:00 PM", "6:15 PM", "6:30 PM", "7:00 PM"],
     href: "/1",
+    image: food1,
   },
   {
     id: "2",
@@ -44,6 +51,7 @@ const restaurants: IRestaurant[] = [
     bookingTrend: 45,
     bookingTimes: ["6:00 PM", "6:20 PM", "6:40 PM", "7:10 PM"],
     href: "/2",
+    image: food2,
   },
   {
     id: "3",
@@ -56,6 +64,7 @@ const restaurants: IRestaurant[] = [
     bookingTrend: 28,
     bookingTimes: ["6:05 PM", "6:25 PM", "6:55 PM", "7:15 PM"],
     href: "/3",
+    image: food3,
   },
   {
     id: "4",
@@ -68,6 +77,7 @@ const restaurants: IRestaurant[] = [
     bookingTrend: 37,
     bookingTimes: ["6:10 PM", "6:30 PM", "7:00 PM", "7:20 PM"],
     href: "/4",
+    image: food4,
   },
   {
     id: "5",
@@ -80,6 +90,7 @@ const restaurants: IRestaurant[] = [
     bookingTrend: 30,
     bookingTimes: ["6:15 PM", "6:35 PM", "7:05 PM", "7:25 PM"],
     href: "/5",
+    image: food1,
   },
   {
     id: "6",
@@ -92,6 +103,7 @@ const restaurants: IRestaurant[] = [
     bookingTrend: 28,
     bookingTimes: ["6:05 PM", "6:25 PM", "6:55 PM", "7:15 PM"],
     href: "/6",
+    image: food2,
   },
   {
     id: "7",
@@ -104,6 +116,7 @@ const restaurants: IRestaurant[] = [
     bookingTrend: 37,
     bookingTimes: ["6:10 PM", "6:30 PM", "7:00 PM", "7:20 PM"],
     href: "/7",
+    image: food3,
   },
   {
     id: "8",
@@ -116,6 +129,7 @@ const restaurants: IRestaurant[] = [
     bookingTrend: 30,
     bookingTimes: ["6:15 PM", "6:35 PM", "7:05 PM", "7:25 PM"],
     href: "/8",
+    image: food4,
   },
 ];
 
@@ -141,7 +155,7 @@ export default function HomePage() {
           title="Available for dinner now"
           action={<Link href="/view-all">View All</Link>}
         >
-          { restaurants.map((restaurant) => (
+          {restaurants.map((restaurant) => (
             <RestaurantCard
               key={restaurant.id}
               title={restaurant.title}
@@ -153,6 +167,7 @@ export default function HomePage() {
               bookingTrend={restaurant.bookingTrend}
               bookingTimes={restaurant.bookingTimes}
               href={restaurant.href}
+              image={restaurant.image}
             />
           ))}
         </RestuarantSlider>
@@ -180,6 +195,7 @@ export default function HomePage() {
                 bookingTrend={restaurant.bookingTrend}
                 bookingTimes={restaurant.bookingTimes}
                 href={restaurant.href}
+                image={restaurant.image}
               />
             ))}
           </RestuarantSlider>

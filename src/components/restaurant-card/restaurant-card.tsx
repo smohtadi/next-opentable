@@ -1,9 +1,8 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Card from "../ui/card/card";
 import { StarIcon, TrendingUpIcon } from "lucide-react";
 import Button from "../ui/button/button";
 import styles from "./styles.module.css";
-import food1 from "#/public/images/food-1.jpg";
 import { Link } from "@/i18n/navigation";
 
 interface IProps {
@@ -16,6 +15,7 @@ interface IProps {
   bookingTrend: number;
   bookingTimes: string[];
   href: string;
+  image: StaticImageData | string;
 }
 
 export default function RestaurantCard({
@@ -28,12 +28,13 @@ export default function RestaurantCard({
   location,
   bookingTrend,
   bookingTimes,
+  image,
 }: IProps) {
   return (
     <Card className={styles.card}>
       <div className={styles.imageContainer}>
         <Link href={href}>
-          <Image alt="Image description" className={styles.image} src={food1} />
+          <Image alt="Image description" className={styles.image} src={image} />
         </Link>
       </div>
       <div className={styles.contents}>
