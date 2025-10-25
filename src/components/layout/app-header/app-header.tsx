@@ -1,5 +1,6 @@
-import { ChevronDown, MapPin, Search } from "lucide-react";
+import LocationDropdown from "./location-dropdown/location-dropdown";
 import Button from "@/components/ui/button/button";
+import { Search } from "lucide-react";
 import styles from "@/components/layout/app-header/styles.module.css";
 
 export default function AppHeader() {
@@ -10,10 +11,7 @@ export default function AppHeader() {
         <h1 className={styles.brand}>OpenTable</h1>
       </div>
       <div className={styles.utility}>
-        <Button appearance="ghost" aria-label="Toggle location picker">
-          <MapPin />
-          <ChevronDown size={16} />
-        </Button>
+        <LocationDropdown />
       </div>
       <div className={styles.actions}>
         <Button

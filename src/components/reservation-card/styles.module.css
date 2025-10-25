@@ -1,0 +1,41 @@
+.card {
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-block-end: 1rem;
+}
+
+.description {
+  margin-block-end: 1.5rem;
+}
+
+.form {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto;
+}
+
+.people {
+  grid-column: span 2;
+}
+
+.availableTitle {
+  font-size: var(--fs-h3);
+  font-weight: 600;
+  margin-block: 1.5rem 1rem;
+}
+.availableTimesList {
+  list-style: none;
+  display: flex;
+  gap: 0.5rem;
+  padding: 0;
+  margin: 0;
+  margin-block-end: 1.5rem;
+}
+

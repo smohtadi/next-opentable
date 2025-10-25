@@ -8,6 +8,7 @@ import { Link } from "@/i18n/navigation";
 import Button from "@/components/ui/button/button";
 import Card from "@/components/ui/card/card";
 import styles from "@/app/[locale]/(app)/[id]/styles.module.css";
+import ReservationCard from "@/components/reservation-card/reservation-card";
 
 export async function generateMetadata({ params }: IPageParamsProps) {
   const { locale } = await params;
@@ -84,14 +85,7 @@ export default function RestaurantPage({ params }: IPageParamsProps) {
             </section>
           </div>
           <div className={styles.col2}>
-            <Card className={styles.reservationCard}>
-              <h2 className={styles.reservationTitle}>Make a Reservation</h2>
-              <p className={styles.reservationDescription}>
-                Book your table at Earls Kitchen + Bar and enjoy an
-                unforgettable dining experience.
-              </p>
-              <Button variant="primary">Reserve Now</Button>
-            </Card>
+            <ReservationCard />
           </div>
         </div>
       </div>

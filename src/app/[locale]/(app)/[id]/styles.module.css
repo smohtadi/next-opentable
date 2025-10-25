@@ -77,22 +77,6 @@
   margin-block-end: 1rem;
 }
 
-.reservationCard {
-  border: 1px solid var(--color-card-border);
-  border-radius: var(--radius);
-  padding: 1.5rem;
-}
-
-.reservationTitle {
-  font-size: 1.25rem;
-  font-weight: 700;
-  margin-block-end: 1rem;
-}
-
-.reservationDescription {
-  margin-block-end: 1.5rem;
-}
-
 @media (min-width: 768px) {
   .col1 {
     flex: 7;
